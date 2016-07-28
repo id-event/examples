@@ -1,0 +1,19 @@
+{
+     "jti": "4d3559ec67504aaba65d40b0363faad8",
+     "iat": 1458496404,
+     "iss": "https://idp.example.com",
+     "aud":[
+      "https://rp.example.com/"
+     ],
+     "sub": "alice@idp.example.com",
+     "events":[
+       "urn:ietf:params:event:HEART:revocation"
+     ],
+     "urn:ietf:params:event:HEART:revocation":{
+       "attributes":["id","tokenHash"],
+       "values":{
+         "tokenHash":"add245003e9bacf1f8e3c3a4eb8c199c",
+         "id":"alice@idp.example.com",
+       }
+     }
+}
