@@ -5,15 +5,14 @@
      "aud":[
       "https://rp.example.com/"
      ],
-     "sub": "alice@idp.example.com",
+     "sub": "a31efebd-6ff7-4963-a374-4474888c1b26",
      "events":[
-       "urn:ietf:params:event:HEART:revocation"
+       "urn:ietf:params:event:HEART:revocation-delete-all"
      ],
-     "urn:ietf:params:event:HEART:revocation":{
-       "attributes":["id","tokenHash"],
+     "urn:ietf:params:event:HEART:revocation-delete-all":{
+       "attributes":["id"],
        "values":{
-         "tokenHash":"add245003e9bacf1f8e3c3a4eb8c199c",
-         "id":"alice@idp.example.com",
+         "id":"a31efebd-6ff7-4963-a374-4474888c1b26",
        }
      }
 }
