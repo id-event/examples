@@ -1,16 +1,18 @@
 {
   "jti": "fb4e75b5411e4e19b6c0fe87950f7749",
   "events":[
-    "https://openid.net/heart/revoke"
+    "https://openid.net/heart/userinfo-update"
   ],
   "iat": 1458496025,
   "iss": "https://idp.example.com",
   "aud":[
     "https://rp.example.com"
   ],
-  "https://openid.net/heart/revoke":{
+  "https://openid.net/heart/userinfo-update":{
     "iss": "https://idp.example.com",
     "sub": "248289761001",
-    "revocationType": "delete all"
+    "updatedInformation":[
+      "email", "picture"
+    ]
   }
 }

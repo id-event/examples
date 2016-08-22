@@ -1,16 +1,17 @@
 {
   "jti": "fb4e75b5411e4e19b6c0fe87950f7749",
   "events":[
-    "https://openid.net/heart/risc"
+    "https://openid.net/heart/parallel-authentication"
   ],
   "iat": 1458496025,
   "iss": "https://rp.example.com",
   "aud":[
     "https://idp.example.com"
   ],
-  "https://openid.net/heart/risc":{
+  "https://openid.net/heart/parallel-authentication":{
     "iss": "https://idp.example.com",
     "sub": "248289761001",
-    "reason": ["unusual heuristic behavior", "access from uknown IP"]
+    "authenticationSuccess": true,
+    "amr": "fpt"
   }
 }

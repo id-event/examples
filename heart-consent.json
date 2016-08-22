@@ -1,16 +1,18 @@
 {
   "jti": "fb4e75b5411e4e19b6c0fe87950f7749",
   "events":[
-    "https://openid.net/heart/revoke"
+    "https://openid.net/heart/consent"
   ],
   "iat": 1458496025,
   "iss": "https://idp.example.com",
   "aud":[
     "https://rp.example.com"
   ],
-  "https://openid.net/heart/revoke":{
+  "https://openid.net/heart/consent":{
     "iss": "https://idp.example.com",
     "sub": "248289761001",
-    "revocationType": "delete all"
+    "consentUri":[
+      "https://idp.example.com/labdisclosure.html#Agree"
+    ]
   }
 }
