@@ -1,16 +1,24 @@
 {
   "jti": "fb4e75b5411e4e19b6c0fe87950f7749",
+  //event indicating an update to information available at the userinfo endpoint
   "events":[
     "https://openid.net/heart/userinfo-update"
   ],
   "iat": 1458496025,
+
+  //this message is being issued from the idp to the rp
   "iss": "https://idp.example.com",
   "aud":[
     "https://rp.example.com"
   ],
+
+  //userinfo-update would have three fields
   "https://openid.net/heart/userinfo-update":{
+    //context of the subject of the event
     "iss": "https://idp.example.com",
+    //identifier of the subject of the event
     "sub": "248289761001",
+    //userinfo fields which have been updated
     "updatedInformation":[
       "email", "picture"
     ]

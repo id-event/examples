@@ -1,16 +1,24 @@
 {
   "jti": "fb4e75b5411e4e19b6c0fe87950f7749",
+  //event indicating suspected fraud
   "events":[
     "https://openid.net/heart/risc"
   ],
+  //time of suspicious behavior
   "iat": 1458496025,
+
+  //this message is being sent from the rp to the idp
   "iss": "https://rp.example.com",
   "aud":[
     "https://idp.example.com"
   ],
+  //risc would have three fields
   "https://openid.net/heart/risc":{
+    //context of the subject of the event
     "iss": "https://idp.example.com",
+    //identifier of the subject of the event
     "sub": "248289761001",
+    //array indicating the reason(s) for suspicion
     "reason": ["unusual heuristic behavior", "access from uknown IP"]
   }
 }

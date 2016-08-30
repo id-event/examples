@@ -1,16 +1,26 @@
 {
   "jti": "fb4e75b5411e4e19b6c0fe87950f7749",
+  //event indicating that the rp's token has been revoked
   "events":[
     "https://openid.net/heart/revoke"
   ],
+
+  //time of revocation
   "iat": 1458496025,
+
+  //this message is being sent from the idp to the rp
   "iss": "https://idp.example.com",
   "aud":[
     "https://rp.example.com"
   ],
+
+  //revoke would have three fields
   "https://openid.net/heart/revoke":{
+    //context of the subject of the event
     "iss": "https://idp.example.com",
+    //identifier of the subject of the event
     "sub": "248289761001",
+    //type of revocation indicating that the user wishes for all their data to be deleted. Other types could be "account suspended" "legacy data access only" or "reduced permissions"
     "revocationType": "delete all"
   }
 }
